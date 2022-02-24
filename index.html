@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- 1. o usuário envia um valor 
         2. o usuário seleciona um moeda
         3. o valor digitado é dividido pelo valor da moeda escolhida
         4. o resultado é mostrado na tela-->
+    <div class="cabeçalho">
+        <h1>Conversor de moedas</h1>
+    </div><!--cabeçalho-->
+    <div class="corpo">
+        <input type="radio" name="radmoney" id="dólar">
+        <label for="dólar">Dólar</label>
+        <input type="radio" name="radmoney" id="libra">
+        <label for="libra">Libra</label>
+        <input type="radio" name="radmoney" id="euro">
+        <label for="euro">Euro</label>
+        <input type="number" min="0" >
+        <p id="resposta">
+            Insira um valor em real e selecione a moeda desejada
+        </p>
+        <input type="button" name="" id="btn" value="Converter">
+    </div><!--corpo-->
+    <div class="rodapé">
 
-        <div class="tudojunto">
-            <div class="cabeçalho">
-                <h1>Conversor de Moedas</h1>
-                <h2>Escreva em real, receba em dólar</h2>
-            </div><!--cabeçalho-->
-            <div class="dispositivo">
-                <input type="text" class="caixadetexto"><!--caixa de texto-->
-                <button class="b">Converter</button><!--botão--> 
-            </div><!--dispositivo-->
-            <h3></h3>
-        </div>
-<script src="index.js"></script>
+    </div><!--rodapé-->
+
+    <script src="index.js"></script>
+
 </body>
 </html>
